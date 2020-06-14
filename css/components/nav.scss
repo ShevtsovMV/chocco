@@ -1,0 +1,16 @@
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  text-decoration: none;
+}
+
+.nav__item {
+  margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

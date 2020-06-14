@@ -1,0 +1,20 @@
+.order-section {
+  position: relative;
+  background: url("../images/decor/berries-pattern.png");
+
+  &::before {
+    content: url("../images/decor/berry-order.png");
+    position: absolute;
+    bottom: 10%;
+    left: 1%;
+    z-index: $z-decor;
+  }
+
+  &::after {
+    content: url("../images/decor/leaf-order.png");
+    position: absolute;
+    bottom: 10%;
+    right: 3px;
+    z-index: $z-decor;
+  }
+}

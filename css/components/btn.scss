@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 19px 35px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+  &_theme_white {
+    background: #fff;
+    color: $darkGreen;
+
+    &:hover {
+      background: $darkGreen;
+      color: #fff;
+    }
+  }
+
+  &_theme_green {
+    background: $darkGreen;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: $darkGreen;
+    }
+  }
+
+  &_theme_transparent {
+    background: transparent;
+    color: $darkGreen;
+    text-transform: none;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}

@@ -1,0 +1,495 @@
+@import url(normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+html,
+body {
+  height: 100%; }
+
+body {
+  font-size: 18px;
+  font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+  color: #666;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+  position: relative; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden; }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  position: relative; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  position: relative;
+  width: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: inherit; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.hero {
+  background: url("../images/decor/big-leaf.png") right bottom no-repeat;
+  background-color: #86c3d7;
+  height: 100vh;
+  min-height: 650px;
+  color: #fff;
+  position: relative; }
+  .hero::before {
+    position: absolute;
+    bottom: -61px;
+    left: 2%;
+    content: url("../images/decor/corner-leaf-hero.png"); }
+  .hero::after {
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+    content: url("../images/decor/berries-and-leaves.png"); }
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 45px;
+  background: url("../images/decor/chocolates.png") right center/50% auto no-repeat; }
+
+.hero__title-section {
+  width: 40%; }
+
+.hero__main-title {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase; }
+
+.hero__title-desc {
+  font-size: 21px;
+  line-height: 1.3;
+  margin-bottom: 29px; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.header__pfone-number {
+  align-self: baseline; }
+
+.nav__list {
+  display: flex;
+  align-items: center; }
+
+.nav__link {
+  text-decoration: none; }
+
+.nav__item {
+  margin-right: 27px; }
+  .nav__item:last-child {
+    margin-right: 0; }
+
+.pfone-number {
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center; }
+
+.phone-number__icon-elem {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px; }
+
+.features {
+  display: flex; }
+
+.features__item {
+  margin-right: 36px; }
+  .features__item:last-child {
+    margin-right: 0; }
+
+.feature {
+  display: flex; }
+
+.feature__icon {
+  width: 45px;
+  margin-right: 8px; }
+
+.feature__text {
+  font-size: 16px;
+  max-width: 85px;
+  line-height: 1.2; }
+
+.btn {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 19px 35px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  border: none; }
+  .btn_theme_white {
+    background: #fff;
+    color: #365a49; }
+    .btn_theme_white:hover {
+      background: #365a49;
+      color: #fff; }
+  .btn_theme_green {
+    background: #365a49;
+    color: #fff; }
+    .btn_theme_green:hover {
+      background: #fff;
+      color: #365a49; }
+  .btn_theme_transparent {
+    background: transparent;
+    color: #365a49;
+    text-transform: none; }
+    .btn_theme_transparent:hover {
+      color: #000; }
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .section_font-color_green {
+    color: #365a49; }
+    .section_font-color_green .section__title {
+      color: inherit; }
+
+.section__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000; }
+
+.headline {
+  text-align: center; }
+
+.headline__title {
+  margin-bottom: 4px; }
+
+.headline__subtitle {
+  padding: 0 26%;
+  line-height: 1.2;
+  margin-bottom: 52px; }
+
+.benefits {
+  display: flex; }
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative; }
+  .benefits__item::before {
+    content: url("../images/decor/separator.png");
+    position: absolute;
+    top: 63px;
+    right: 0;
+    transform: translate(50%, -50%); }
+  .benefits__item:first-child {
+    padding-left: 0; }
+  .benefits__item:last-child {
+    padding-right: 0; }
+    .benefits__item:last-child::before {
+      display: none; }
+
+.benefit {
+  text-align: center; }
+
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  background: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.benefit__image {
+  margin-bottom: 20px; }
+
+.benefit__icon {
+  width: 75px;
+  height: 69px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.benefit__title {
+  font-size: 27px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 16px; }
+
+.benefit__desc {
+  line-height: 1.2; }
+
+.benefits-section {
+  position: relative;
+  background: url("../images/decor/side-leaf.png") left top 57% no-repeat; }
+  .benefits-section::before {
+    content: url("../images/decor/bars-and-berries.png");
+    position: absolute;
+    bottom: -114px;
+    left: 0;
+    z-index: 10; }
+
+.reviews__display {
+  background: url("../images/decor/drown-berries.png") right top no-repeat;
+  background-color: #f8faf9;
+  padding: 50px 45px 34px;
+  margin-bottom: 22px;
+  overflow: hidden;
+  position: relative; }
+  .reviews__display::before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -65px; }
+
+.reviews__display-inner {
+  display: flex; }
+
+.reviews__avatar {
+  width: 254px;
+  height: 260px;
+  margin-right: 20px; }
+
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.reviews__content {
+  width: 51%;
+  padding-top: 9px; }
+
+.reviews__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 22px;
+  color: #000; }
+
+.reviews__text {
+  margin-bottom: 27px;
+  line-height: 1.2; }
+
+.reviews__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000; }
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center; }
+
+.interactive-avatar {
+  width: 80px;
+  height: 80px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative; }
+  .interactive-avatar_active {
+    border-color: #365a49; }
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block; }
+
+.interactive-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.reviews-section {
+  position: relative;
+  background: url("../images/decor/strawberry.png") right 1% top 5% no-repeat; }
+  .reviews-section::before {
+    content: url("../images/decor/leaf-reviwes.png");
+    position: absolute;
+    bottom: -165px;
+    left: 0;
+    z-index: 10; }
+  .reviews-section::after {
+    content: url("../images/decor/berries-reviwes.png");
+    position: absolute;
+    bottom: -95px;
+    left: 0;
+    z-index: 10; }
+
+.order-section {
+  position: relative;
+  background: url("../images/decor/berries-pattern.png"); }
+  .order-section::before {
+    content: url("../images/decor/berry-order.png");
+    position: absolute;
+    bottom: 10%;
+    left: 1%;
+    z-index: 10; }
+  .order-section::after {
+    content: url("../images/decor/leaf-order.png");
+    position: absolute;
+    bottom: 10%;
+    right: 3px;
+    z-index: 10; }
+
+.form {
+  display: flex; }
+
+.form__col {
+  flex: 1;
+  margin-right: 20px; }
+  .form__col:last-child {
+    margin-right: 0; }
+
+.form__row {
+  display: flex;
+  margin-bottom: 18px; }
+
+.form__block {
+  flex: 1;
+  margin-right: 20px; }
+  .form__block:last-child {
+    margin-right: 0; }
+
+.form__input {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  width: 100%;
+  border: none;
+  padding: 19px 11px; }
+  .form__input_textarea {
+    height: 177px;
+    resize: none; }
+  .form__input:focus {
+    outline: #dee2bd solid 3px; }
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px; }
+  .form__controls:last-child {
+    margin-bottom: 0; }
+
+.form__radio {
+  margin-right: 22px; }
+
+.form__btns {
+  margin-top: 40px; }
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none; }
+
+.radio__elem {
+  display: none; }
+  .radio__elem:checked ~ .radio__visible::before {
+    background: #365a49; }
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 8px; }
+  .radio__visible::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.radio_checkbox .radio__visible {
+  border-radius: 0; }
+.radio_checkbox .radio__elem:checked ~ .radio__visible::before {
+  background: url("../images/icons/tick.png") center center no-repeat; }
+
+.fixed-menu {
+  position: fixed;
+  top: 50vh;
+  right: 3%;
+  transform: translateY(-50%);
+  z-index: 100; }
+
+.fixed-menu__item {
+  margin-bottom: 5px; }
+  .fixed-menu__item_active .fixed-menu__link {
+    border-color: #fff; }
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative; }
+  .fixed-menu__link::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
