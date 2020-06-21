@@ -5,7 +5,7 @@
   &::before {
     content: url("../images/decor/leaf-reviwes.png");
     position: absolute;
-    bottom: -165px;
+    bottom: rem(-165px);
     left: 0;
     z-index: $z-decor;
   }
@@ -13,7 +13,7 @@
   &::after {
     content: url("../images/decor/berries-reviwes.png");
     position: absolute;
-    bottom: -95px;
+    bottom: rem(-95px);
     left: 0;
     z-index: $z-decor;
   }

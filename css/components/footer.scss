@@ -1,0 +1,17 @@
+.footer {
+  padding: rem(21px) 0 rem(14px);
+
+  @include tablets {
+    padding-bottom: rem(21px);
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
+}

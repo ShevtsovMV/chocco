@@ -2,6 +2,10 @@
   display: flex;
   cursor: pointer;
   user-select: none;
+
+  @include phones {
+    margin-bottom: rem(8px);
+  }
 }
 
 .radio__elem {
@@ -13,17 +17,17 @@
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin-right: 8px;
+  margin-right: rem(8px);
 
   &::before {
     content: "";
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     background: transparent;
     border-radius: 50%;
     position: absolute;

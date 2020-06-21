@@ -1,0 +1,41 @@
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  margin-right: rem(20px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  width: rem(20px);
+  height: rem(20px);
+  opacity: 0.5;
+  transition: opacity .5s;
+}
+
+.socials__link:hover {
+  opacity: 1;
+}
+
+
+.socials__item_icon_vk .socials__link {
+  background: url("../../images/icons/vk.svg");
+}
+
+.socials__item_icon_fb .socials__link {
+  background: url("../../images/icons/f.svg");
+}
+
+.socials__item_icon_insta .socials__link {
+  background: url("../../images/icons/in.svg");
+}
+
+.socials__item_icon_tw .socials__link {
+  background: url("../../images/icons/tv.svg");
+}

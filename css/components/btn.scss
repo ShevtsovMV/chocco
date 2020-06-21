@@ -1,8 +1,8 @@
 .btn {
   display: inline-block;
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: bold;
-  padding: 19px 35px;
+  padding: rem(19px) rem(35px);
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;

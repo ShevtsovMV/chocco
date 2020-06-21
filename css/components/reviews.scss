@@ -1,33 +1,51 @@
 .reviews__display {
   background: url("../images/decor/drown-berries.png") right top no-repeat;
   background-color: #f8faf9;
-  padding: 50px 45px 34px;
-  margin-bottom: 22px;
+  padding: rem(50px) rem(45px) rem(34px);
+  margin-bottom: rem(22px);
   overflow: hidden;
   position: relative;
+
+  @include phones {
+    padding: 9.25vw 8.33vw 6.3vw;
+    margin-bottom: 4vw;
+  }
 
   &::before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 }
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
-  margin-right: 20px;
+  width: rem(254px);
+  height: rem(260px);
+  margin-right: rem(20px);
+
+  @include tablets {
+    width: rem(138px);
+    height: rem(140px);
+    margin-right: 0;
+    margin-bottom: rem(17px);
+  }
 }
 
 .reviews__avatar-img {
@@ -38,23 +56,30 @@
 
 .reviews__content {
   width: 51%;
-  padding-top: 9px;
+  padding-top: rem(9px);
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .reviews__title {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
   color: #000;
 }
 
 .reviews__text {
-  margin-bottom: 27px;
+  margin-bottom: rem(27px);
   line-height: 1.2;
+
+  @include phones {
+    margin-bottom: 5.55vw;
+  }
 }
 
 .reviews__author {
-  font-size: 18px;
   font-weight: bold;
   color: #000;
 }
