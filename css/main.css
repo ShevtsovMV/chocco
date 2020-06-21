@@ -705,7 +705,10 @@ img {
   background: url("../images/map.png") center center/cover no-repeat; }
 
 .footer {
-  padding: 1.1666666667rem 0 0.7777777778rem; }
+  position: absolute;
+  bottom: 0;
+  padding: 1.1666666667rem 0 0.7777777778rem;
+  background-color: #fff; }
   @media screen and (max-width: 768px) {
     .footer {
       padding-bottom: 1.1666666667rem; } }

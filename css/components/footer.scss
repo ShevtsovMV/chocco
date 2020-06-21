@@ -1,5 +1,8 @@
 .footer {
+  position: absolute;
+  bottom: 0;
   padding: rem(21px) 0 rem(14px);
+  background-color: #fff;
 
   @include tablets {
     padding-bottom: rem(21px);
