@@ -37,13 +37,27 @@
   }
 }
 
+.radio__checkmark {
+  opacity: 0;
+  fill: $darkGreen;
+  width: rem(14px);
+  height: rem(14px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .radio_checkbox {
   .radio__visible {
     border-radius: 0;
   }
 
   .radio__elem:checked~.radio__visible::before {
-    background: url("../images/icons/tick.png") center center no-repeat;
-    ;
+    display: none;
+  }
+
+  .radio__elem:checked~.radio__visible .radio__checkmark {
+    opacity: 1;
   }
 }

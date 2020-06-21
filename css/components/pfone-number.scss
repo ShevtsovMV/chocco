@@ -8,10 +8,11 @@
   flex-shrink: 0;
 }
 
-.phone-number__icon-elem {
+.phone-number__icon-img {
   width: rem(12px);
   height: rem(12px);
   margin-right: rem(6px);
+  fill: currentColor;
 }
 
 .phone-number__text {
