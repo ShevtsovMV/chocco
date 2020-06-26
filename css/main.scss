@@ -17,6 +17,7 @@ $darkGreen: #365a49;
 
 //z-inexes
 $z-fixed-menu: 100;
+$z-fullscreen-menu: 1000;
 $z-decor: -10;
 $z-background: -100;
 
@@ -32,6 +33,7 @@ $z-background: -100;
 @import "components/hero";
 @import "components/header";
 @import "components/nav";
+@import "components/menu";
 @import "components/pfone-number";
 @import "components/features";
 @import "components/feature";

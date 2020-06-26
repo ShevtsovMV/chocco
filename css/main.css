@@ -185,6 +185,44 @@ img {
   .nav__item:last-child {
     margin-right: 0; }
 
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: #343739; }
+  .menu.open {
+    display: block; }
+
+.menu__close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1.3333333333rem;
+  right: 2.8vw;
+  cursor: pointer;
+  fill: #fff;
+  opacity: 0.6; }
+  .menu__close:hover {
+    opacity: 1; }
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.1111111111rem;
+  margin-top: 15vh; }
+
+.menu__link {
+  text-decoration: none; }
+
+.menu__item {
+  margin-bottom: 2.5vh; }
+
 .pfone-number {
   text-decoration: none;
   display: flex;

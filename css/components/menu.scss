@@ -1,0 +1,46 @@
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-fullscreen-menu;
+  background: #343739;
+
+  &.open {
+    display: block;
+  }
+}
+
+.menu__close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: rem(24px);
+  right: 2.8vw;
+  cursor: pointer;
+  fill: #fff;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(38px);
+  margin-top: 15vh;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+.menu__item {
+  margin-bottom: 2.5vh;
+}
