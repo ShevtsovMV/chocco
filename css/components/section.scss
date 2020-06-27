@@ -1,4 +1,5 @@
 .section {
+  position: relative;
   height: 100vh;
   min-height: rem(650px);
   display: flex;
@@ -11,6 +12,15 @@
     .section__title {
     color: inherit;
     }
+  }
+
+  &_bg_light-gray::before {
+    content: "";
+      width: 100%;
+      height: 100%;
+      background-color: $lightGray;
+      position: absolute;
+      z-index: $z-background;
   }
 }
 

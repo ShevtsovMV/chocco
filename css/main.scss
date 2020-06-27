@@ -13,10 +13,13 @@ $baseFontSize: 18px;
 
 //colors
 $blue: #86c3d7;
+$darkBlue: #60aacc;
 $darkGreen: #365a49;
+$lightGray: #f8faf9;
 
 //z-inexes
 $z-fixed-menu: 100;
+$z-dropdown: 10;
 $z-fullscreen-menu: 1000;
 $z-decor: -10;
 $z-background: -100;
@@ -55,3 +58,6 @@ $z-background: -100;
 @import "components/footer";
 @import "components/socials";
 @import "components/contacts";
+@import "components/product-card";
+@import "components/ingredients-dropdown";
+@import "components/swiper";

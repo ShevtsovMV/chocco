@@ -7,7 +7,7 @@
     height: 100%;
     background: url("../images/decor/berries-pattern.png");
     position: absolute;
-    z-index: -100;
+    z-index: $z-background;
   }
 
   &::after {

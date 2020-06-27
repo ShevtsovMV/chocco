@@ -1,0 +1,55 @@
+.swiper {
+  position: relative;
+}
+
+.swiper__btn {
+  position: absolute;
+  top: 50%;
+  padding-top: 6px;
+  border: transparent;
+  cursor: pointer;
+  background-color: transparent;
+
+  &_prev {
+    left: 0;
+  }
+
+  &_next {
+    right: 0;
+  }
+
+  @include tablets {
+    top: 20vw;
+
+    &_prev {
+      left: 17%;
+    }
+  
+    &_next {
+      right: 17%;
+    }
+  }
+
+  @include phones {
+    top: 18vw;
+
+    &_prev {
+      left: 2%;
+    }
+  
+    &_next {
+      right: 2%;
+    }
+  }
+}
+
+.swiper__btn_prev {
+  .swiper__btn-img{
+    transform: rotate(180deg);
+  }
+}
+
+.swiper__btn-img {
+  width: 13px;
+  height: 28px;
+}

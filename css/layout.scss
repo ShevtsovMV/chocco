@@ -18,7 +18,7 @@ body {
 body {
   font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
   color: #666;
-  line-height: 1.42;
+  line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-smoothing: grayscale;
   position: relative;
@@ -32,10 +32,14 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 85%;
   max-width: $containerWidth;
   margin: 0 auto;
   position: relative;
+
+  @include tablets {
+    width: 95%;
+  }
 }
 
 h1,
