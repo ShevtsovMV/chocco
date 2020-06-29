@@ -1,8 +1,8 @@
-.swiper {
+.slider {
   position: relative;
 }
 
-.swiper__btn {
+.slider__btn {
   position: absolute;
   top: 50%;
   padding-top: 6px;
@@ -43,13 +43,13 @@
   }
 }
 
-.swiper__btn_prev {
-  .swiper__btn-img{
+.slider__btn_prev {
+  .slider__btn-img{
     transform: rotate(180deg);
   }
 }
 
-.swiper__btn-img {
+.slider__btn-img {
   width: 13px;
   height: 28px;
 }

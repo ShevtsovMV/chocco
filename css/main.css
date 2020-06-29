@@ -818,22 +818,22 @@ img {
     .product-card {
       flex-direction: column; } }
 
-.product_card__picture {
+.product-card__picture {
   width: 50%;
   align-self: center; }
 
-.product_card__content {
+.product-card__content {
   flex: 1;
   padding: 0 3.1111111111rem 0 3.6666666667rem; }
   @media screen and (max-width: 768px) {
-    .product_card__content {
+    .product-card__content {
       text-align: center;
       padding: 0 15vw; } }
   @media screen and (max-width: 768px) {
-    .product_card__content {
+    .product-card__content {
       padding: 0 7vw; } }
 
-.product_card__ingredients {
+.product-card__ingredients {
   position: relative;
   width: 5rem;
   height: 5rem;
@@ -841,15 +841,15 @@ img {
   border-radius: 5px;
   margin-bottom: 1.5555555556rem;
   color: #fff; }
-  .product_card__ingredients:hover {
+  .product-card__ingredients:hover {
     background-color: #60aacc; }
-    .product_card__ingredients:hover .product_card__ingredients-dropdown {
+    .product-card__ingredients:hover .product-card__ingredients-dropdown {
       display: block; }
   @media screen and (max-width: 768px) {
-    .product_card__ingredients {
+    .product-card__ingredients {
       display: none; } }
 
-.product_card__ingredients-inner {
+.product-card__ingredients-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -858,18 +858,18 @@ img {
   height: 100%;
   cursor: pointer; }
 
-.product_card__ingredients-icon {
+.product-card__ingredients-icon {
   width: 60%;
   height: 60%;
   fill: #fff;
   margin-bottom: 5%; }
 
-.product_card__ingredients-text {
+.product-card__ingredients-text {
   font-size: 0.7777777778rem;
   font-weight: bold;
   text-transform: uppercase; }
 
-.product_card__ingredients-dropdown {
+.product-card__ingredients-dropdown {
   display: none;
   position: absolute;
   z-index: 10;
@@ -932,38 +932,38 @@ img {
   width: 72%;
   padding: 0 1.3333333333rem; }
 
-.swiper {
+.slider {
   position: relative; }
 
-.swiper__btn {
+.slider__btn {
   position: absolute;
   top: 50%;
   padding-top: 6px;
   border: transparent;
   cursor: pointer;
   background-color: transparent; }
-  .swiper__btn_prev {
+  .slider__btn_prev {
     left: 0; }
-  .swiper__btn_next {
+  .slider__btn_next {
     right: 0; }
   @media screen and (max-width: 768px) {
-    .swiper__btn {
+    .slider__btn {
       top: 20vw; }
-      .swiper__btn_prev {
+      .slider__btn_prev {
         left: 17%; }
-      .swiper__btn_next {
+      .slider__btn_next {
         right: 17%; } }
   @media screen and (max-width: 480px) {
-    .swiper__btn {
+    .slider__btn {
       top: 18vw; }
-      .swiper__btn_prev {
+      .slider__btn_prev {
         left: 2%; }
-      .swiper__btn_next {
+      .slider__btn_next {
         right: 2%; } }
 
-.swiper__btn_prev .swiper__btn-img {
+.slider__btn_prev .slider__btn-img {
   transform: rotate(180deg); }
 
-.swiper__btn-img {
+.slider__btn-img {
   width: 13px;
   height: 28px; }
