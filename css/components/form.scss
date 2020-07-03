@@ -54,7 +54,11 @@
   }
 
   &:focus {
-    outline: #dee2bd solid rem(3px);
+    outline: #dee2bd solid 3px;
+  }
+
+  &.input-error {
+    outline: red solid 3px;
   }
 
   @include tablets {

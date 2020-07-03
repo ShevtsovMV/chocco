@@ -646,7 +646,9 @@ img {
     height: 9.8333333333rem;
     resize: none; }
   .form__input:focus {
-    outline: #dee2bd solid 0.1666666667rem; }
+    outline: #dee2bd solid 3px; }
+  .form__input.input-error {
+    outline: red solid 3px; }
   @media screen and (max-width: 768px) {
     .form__input {
       padding: 0.4444444444rem; }
@@ -676,6 +678,7 @@ img {
 
 .radio {
   display: flex;
+  align-items: center;
   cursor: pointer;
   user-select: none; }
   @media screen and (max-width: 480px) {
@@ -1050,3 +1053,19 @@ img {
 
 .team__desc {
   font-weight: 300; }
+
+.modal {
+  display: none;
+  padding: 0; }
+  .modal.error-modal .modal__content {
+    color: red; }
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 3.5555555556rem;
+  background-color: #fff; }
+
+.modal__content {
+  margin-bottom: 1.2222222222rem; }

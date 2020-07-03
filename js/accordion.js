@@ -28,15 +28,11 @@ window.onresize = () => {
 const teamHeight = () => {
   const team = document.querySelector(".team");
   const blocks = team.querySelectorAll(".team__details");
-  console.log(blocks);
 
   const blocksHeight = [];
   blocks.forEach(element => {
     blocksHeight.push(element.scrollHeight);
-    console.log(element.scrollHeight);
   });
-
-  console.log("blocksHeight: " + blocksHeight);
 
   const getMaxOfArray = (numArray) => Math.max.apply(null, numArray);
   team.style.minHeight = parseFloat(getComputedStyle(team).height) + getMaxOfArray(blocksHeight) + "px";
