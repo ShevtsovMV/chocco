@@ -6,7 +6,8 @@
   overflow: hidden;
   position: relative;
 
-  &_active {
+  &.active,
+  &:hover {
     border-color: #365a49;
   }
 

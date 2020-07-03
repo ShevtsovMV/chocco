@@ -2,6 +2,15 @@
   position: relative;
 }
 
+.slider__container {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider__slide {
+  flex: 1 0 100%;
+}
+
 .slider__btn {
   position: absolute;
   top: 50%;
