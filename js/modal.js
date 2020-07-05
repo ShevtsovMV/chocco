@@ -19,6 +19,7 @@ $(".form").submit(e => {
   const phone = form.find("[name='phone']");
   const comment = form.find("[name='comment']");
   const to = form.find("[name='to']");
+  const btnReset = form.find("[type='reset']");
 
   const modal = $("#modal");
   const content = modal.find(".modal__content")
@@ -41,6 +42,7 @@ $(".form").submit(e => {
 
     request.done(data => {
       content.text(data.message);
+      btnReset.click();
     });
 
     request.fail(data => {

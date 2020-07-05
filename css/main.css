@@ -1052,7 +1052,8 @@ img {
   color: #000; }
 
 .team__desc {
-  font-weight: 300; }
+  font-weight: 300;
+  padding-bottom: 1.4444444444rem; }
 
 .modal {
   display: none;
