@@ -1070,3 +1070,70 @@ img {
 
 .modal__content {
   margin-bottom: 1.2222222222rem; }
+
+.accordeon {
+  background: url("../images/decor/horizontal-acco-bg.png"), #000;
+  background-size: cover; }
+
+.accordeon__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex; }
+
+.accordeon__item {
+  height: 100%;
+  display: flex; }
+
+.accordeon__trigger {
+  display: flex;
+  width: 100px;
+  background-position: left bottom;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  padding-bottom: 40px; }
+
+.accordeon__title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%; }
+
+.accordeon__wrap {
+  width: 0;
+  overflow: hidden;
+  transition: 1s; }
+
+.accordeon__content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px 25px 28px;
+  overflow-y: auto;
+  background-color: rgba(51, 53, 55, 0.93);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100%; }
+
+.accordeon__close {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  cursor: pointer;
+  fill: #fff;
+  opacity: 0.6; }
+  .accordeon__close:hover {
+    opacity: 1; }
+
+.accordeon__text {
+  margin-right: 30px; }
+  @media screen and (max-width: 480px) {
+    .accordeon__text {
+      margin-right: 0; } }

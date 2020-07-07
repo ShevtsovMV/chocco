@@ -1,0 +1,87 @@
+.accordeon{
+  background: url('../images/decor/horizontal-acco-bg.png'), #000;
+  background-size: cover;
+}
+
+.accordeon__list{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+
+.accordeon__item{
+  height: 100%;
+  display: flex;
+}
+
+.accordeon__trigger{
+  display: flex;
+  width: 100px;
+  background-position: left bottom;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  padding-bottom: 40px;
+}
+
+.accordeon__title{
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
+}
+
+.accordeon__wrap{
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+// .active .accordeon__wrap{
+//   width: 530px;
+// }
+
+.accordeon__content{
+  display: flex;
+  flex-direction: column;
+  // min-width: 530px;
+  padding: 25px 30px 25px 28px;
+  overflow-y: auto;
+  background-color: rgba(51, 53, 55, .93);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  // position: relative;
+  height: 100%;
+}
+
+.accordeon__close{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  // position: absolute;
+  // top: rem(24px);
+  // right: 2.8vw;
+  cursor: pointer;
+  fill: #fff;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.accordeon__text {
+  margin-right: 30px;
+
+  @include phones {
+    margin-right: 0;
+  }
+}
