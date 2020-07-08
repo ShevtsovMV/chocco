@@ -775,12 +775,7 @@ img {
   height: 4px;
   border-radius: 10px; }
 
-.map-section {
-  background: url("../images/map.png") center center/cover no-repeat; }
-
 .footer {
-  position: absolute;
-  bottom: 0;
   padding: 1.1666666667rem 0 0.7777777778rem;
   background-color: #fff; }
   @media screen and (max-width: 768px) {
@@ -1137,3 +1132,7 @@ img {
   @media screen and (max-width: 480px) {
     .accordeon__text {
       margin-right: 0; } }
+
+.map {
+  width: 100%;
+  height: 100%; }
