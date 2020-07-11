@@ -1,6 +1,14 @@
 .accordeon{
   background: url('../images/decor/horizontal-acco-bg.png'), #000;
   background-size: cover;
+
+  &::before {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    content: url("../images/decor/berry-menu.png");
+    z-index: $z-decor-first-plan;
+  }
 }
 
 .accordeon__list{
@@ -9,6 +17,11 @@
   right: 0;
   height: 100%;
   display: flex;
+  padding-right: 7%;
+
+  @include tablets {
+  padding-right: 0;
+  }
 }
 
 .accordeon__item{

@@ -8,7 +8,7 @@ html {
       font-size: 17px; } }
   @media screen and (max-width: 480px) {
     html {
-      font-size: 16px; } }
+      font-size: 3.33vmin; } }
 
 html,
 body {
@@ -85,7 +85,6 @@ img {
   background: url("../images/decor/big-leaf.png") right bottom no-repeat;
   background-color: #86c3d7;
   height: 100%;
-  min-height: 36.1111111111rem;
   color: #fff;
   position: relative; }
   @media screen and (max-width: 768px) {
@@ -314,7 +313,6 @@ img {
 .section {
   position: relative;
   height: 100%;
-  min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -612,6 +610,13 @@ img {
   @media screen and (max-width: 768px) {
     .order-section::after {
       display: none; } }
+
+.bars-section::after {
+  position: absolute;
+  bottom: -130px;
+  right: 0;
+  content: url("../images/decor/berries-and-leaf-bars-section.png");
+  z-index: -10; }
 
 .form {
   display: flex; }
@@ -1086,13 +1091,23 @@ img {
 .accordeon {
   background: url("../images/decor/horizontal-acco-bg.png"), #000;
   background-size: cover; }
+  .accordeon::before {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    content: url("../images/decor/berry-menu.png");
+    z-index: 200; }
 
 .accordeon__list {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
-  display: flex; }
+  display: flex;
+  padding-right: 7%; }
+  @media screen and (max-width: 768px) {
+    .accordeon__list {
+      padding-right: 0; } }
 
 .accordeon__item {
   height: 100%;
@@ -1180,7 +1195,7 @@ img {
   height: 24px;
   border: none;
   outline: none;
-  margin-right: 3%; }
+  margin-right: 4%; }
   .player__play[data-icon="play"] {
     background: url("../images/icons/play.svg") center center no-repeat; }
   .player__play[data-icon="pause"] {
@@ -1250,6 +1265,13 @@ img {
   border: none;
   transform: translate(-50%, -50%);
   pointer-events: none; }
+
+.player-section::after {
+  position: absolute;
+  bottom: -110px;
+  right: 0;
+  content: url("../images/decor/blackberry.png");
+  z-index: -10; }
 
 .player-section__container {
   position: relative;

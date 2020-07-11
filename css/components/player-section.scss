@@ -1,3 +1,13 @@
+.player-section {
+  &::after {
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+    content: url("../images/decor/blackberry.png");
+    z-index: $z-decor;
+  }
+}
+
 .player-section__container {
   position: relative;
   width: 660px;

@@ -4,20 +4,35 @@ const horizontalAcco = (selector) => {
   const acco = document.querySelector(selector);
   const items = acco.querySelectorAll("[data-item]");
   const links = acco.querySelectorAll("[data-trigger]");
+  const textContainers = acco.querySelectorAll("[data-content]");
+  const texts = acco.querySelectorAll("[data-text]");
 
   const calculateWidth = () => {
+    let regItemWidth = 0;
+
     const windowWidth = window.innerWidth;
     const MAX_WIDTH = 530;
-
+    const accoPadding = parseFloat(getComputedStyle(acco).paddingRight);
     const linksWidth = links[0].offsetWidth;
+    const reqWidth = windowWidth - accoPadding - (linksWidth * links.length);
 
-    const reqWidth = windowWidth - (linksWidth * links.length);
+    reqWidth > MAX_WIDTH ? regItemWidth = MAX_WIDTH : regItemWidth = reqWidth;
 
-    return reqWidth > MAX_WIDTH ? MAX_WIDTH : reqWidth;
+    const textContainerPaddingRight = parseFloat(getComputedStyle(textContainers[0]).paddingRight);
+    const textContainerPaddingLeft = parseFloat(getComputedStyle(textContainers[0]).paddingLeft);
+    const textMarginRight = parseFloat(getComputedStyle(texts[0]).marginRight);
+
+    const textWidth = regItemWidth - textContainerPaddingRight - textContainerPaddingLeft - textMarginRight;
+
+
+    return {
+      container: regItemWidth,
+      text: textWidth
+    }
   };
 
   const closeItem = (activeElement) => {
-    const activeContent = activeElement.querySelector("[data-content]");
+    const activeContent = activeElement.querySelector("[data-wrap]");
     activeContent.style.width = "0px";
     activeElement.classList.remove("active");
 
@@ -41,10 +56,13 @@ const horizontalAcco = (selector) => {
       if (!active || active.querySelector("[data-trigger]") !== target.closest("[data-trigger]")) {
         const current = target.closest("[data-item]");
         current.classList.add("active");
-        const currentContent = current.querySelector("[data-content]");
+        const currentContent = current.querySelector("[data-wrap]");
+        const currentText = current.querySelector("[data-text]");
+
+        currentText.style.width = calculateWidth().text + "px";
 
         if (body.offsetWidth > 480) {
-          currentContent.style.width = calculateWidth() + "px";
+          currentContent.style.width = calculateWidth().container + "px";
         } else {
           items.forEach(function (item) {
             if (item !== current) {

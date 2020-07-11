@@ -22,6 +22,7 @@ $z-fixed-menu: 100;
 $z-dropdown: 10;
 $z-fullscreen-menu: 1000;
 $z-decor: -10;
+$z-decor-first-plan: 200;
 $z-background: -100;
 
 //normlize
@@ -50,6 +51,7 @@ $z-background: -100;
 @import "components/interactive-avatar";
 @import "components/reviews-section";
 @import "components/order-section";
+@import "components/bars-section";
 @import "components/form";
 @import "components/radio";
 @import "components/fixed-menu";
