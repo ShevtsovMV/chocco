@@ -13,32 +13,32 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero">
+      <section class="hero" data-section-id="hero" data-sidemenu-theme="white">
         <div class="container hero__container">
           <header class="header">
             <img src="images/logo.png" alt="chocco logo" class="logo">
             <nav class="nav header__nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="#" class="nav__link">О нас</a>
+                  <a href="#" class="nav__link" data-scroll-to="benefits">О нас</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Батончики</a>
+                  <a href="#" class="nav__link" data-scroll-to="bars">Батончики</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Команда</a>
+                  <a href="#" class="nav__link" data-scroll-to="team">Команда</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Меню</a>
+                  <a href="#" class="nav__link" data-scroll-to="menu">Меню</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Отзывы</a>
+                  <a href="#" class="nav__link" data-scroll-to="reviews">Отзывы</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Как мы работаем</a>
+                  <a href="#" class="nav__link" data-scroll-to="player">Как мы работаем</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Контакты</a>
+                  <a href="#" class="nav__link" data-scroll-to="contacts">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -61,25 +61,25 @@
               </svg>
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#" class="menu__link" data-scroll-to="benefits">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Батончики</a>
+                  <a href="#" class="menu__link" data-scroll-to="bars">Батончики</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                  <a href="#" class="menu__link" data-scroll-to="team">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                  <a href="#" class="menu__link" data-scroll-to="menu">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#" class="menu__link" data-scroll-to="reviews">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
+                  <a href="#" class="menu__link" data-scroll-to="player">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="#" class="menu__link" data-scroll-to="contacts">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -87,7 +87,7 @@
           <div class="hero__title-section">
             <h1 class="hero__main-title">Hатуральные шоколадные батончики</h1>
             <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-            <button class="btn btn_theme_white">Заказать</button>
+            <button class="btn btn_theme_white" data-scroll-to="order">Заказать</button>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
@@ -113,7 +113,7 @@
           </div>
         </div>
       </section>
-      <section class="section benefits-section">
+      <section class="section benefits-section" data-section-id="benefits" data-sidemenu-theme="black">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему chocco?</h2>
@@ -169,232 +169,230 @@
           </ul>
         </div>
       </section>
-      <section class="section section_bg_light-gray">
-        <div class="products">
-          <div class="container">
-            <div class="slider">
-              <ul class="slider__container">
-                <li class="slider__slide product-card">
-                  <div class="product-card__picture"><img src="./images/decor/granola-grape.png"
-                      alt="Батончик “Гранола виноград”"></div>
-                  <div class="product-card__content">
-                    <div class="product-card__ingredients">
-                      <div class="product-card__ingredients-inner">
-                        <svg class="product-card__ingredients-icon">
-                          <use xlink:href="./images/icons/sprite.svg#chocolate-bar"></use>
-                        </svg>
-                        <div class="product-card__ingredients-text">Состав</div>
+      <section class="section section_bg_light-gray" data-section-id="bars" data-sidemenu-theme="black">
+        <div class="container">
+          <div class="slider">
+            <ul class="slider__container">
+              <li class="slider__slide product-card">
+                <div class="product-card__picture"><img src="./images/decor/granola-grape.png"
+                    alt="Батончик “Гранола виноград”"></div>
+                <div class="product-card__content">
+                  <div class="product-card__ingredients">
+                    <div class="product-card__ingredients-inner">
+                      <svg class="product-card__ingredients-icon">
+                        <use xlink:href="./images/icons/sprite.svg#chocolate-bar"></use>
+                      </svg>
+                      <div class="product-card__ingredients-text">Состав</div>
+                    </div>
+                    <div class="product-card__ingredients-dropdown ingredients-dropdown">
+                      <table class="ingredients-dropdown__table">
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#grape"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Виноград</td>
+                          <td class="ingredients-dropdown__col">25 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#nut"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Грецкий орех</td>
+                          <td class="ingredients-dropdown__col">32 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#almond"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Кунжутное семя</td>
+                          <td class="ingredients-dropdown__col">20 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#powder"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Сухое молоко</td>
+                          <td class="ingredients-dropdown__col">10 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#apitherapy"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Зам. сахара</td>
+                          <td class="ingredients-dropdown__col">4 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#beans"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Какао бобы</td>
+                          <td class="ingredients-dropdown__col">4 г</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="product-card__title">Батончик “Гранола виноград”</div>
+                  <div class="product-card__desc">
+                    <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко,
+                      заменитель сахара и какао бобы.</p>
+                  </div>
+                  <div class="product-card__info">
+                    <div class="product-card__info-row">
+                      <div class="product-card__info-col">
+                        <p>Калорийность</p>
+                        <p><b>110 ккал</b></p>
                       </div>
-                      <div class="product-card__ingredients-dropdown ingredients-dropdown">
-                        <table class="ingredients-dropdown__table">
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#grape"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Виноград</td>
-                            <td class="ingredients-dropdown__col">25 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#nut"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Грецкий орех</td>
-                            <td class="ingredients-dropdown__col">32 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#almond"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Кунжутное семя</td>
-                            <td class="ingredients-dropdown__col">20 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#powder"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Сухое молоко</td>
-                            <td class="ingredients-dropdown__col">10 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#apitherapy"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Зам. сахара</td>
-                            <td class="ingredients-dropdown__col">4 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#beans"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Какао бобы</td>
-                            <td class="ingredients-dropdown__col">4 г</td>
-                          </tr>
-                        </table>
+                      <div class="product-card__info-col">
+                        <p>Вес</p>
+                        <p><b>95 грамм</b></p>
                       </div>
                     </div>
-                    <div class="product-card__title">Батончик “Гранола виноград”</div>
-                    <div class="product-card__desc">
-                      <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко,
-                        заменитель сахара и какао бобы.</p>
-                    </div>
-                    <div class="product-card__info">
-                      <div class="product-card__info-row">
-                        <div class="product-card__info-col">
-                          <p>Калорийность</p>
-                          <p><b>110 ккал</b></p>
-                        </div>
-                        <div class="product-card__info-col">
-                          <p>Вес</p>
-                          <p><b>95 грамм</b></p>
-                        </div>
+                    <div class="product-card__info-row">
+                      <div class="product-card__info-col product-card__info-col_font-size_big">
+                        <p>140 ₽</p>
                       </div>
-                      <div class="product-card__info-row">
-                        <div class="product-card__info-col product-card__info-col_font-size_big">
-                          <p>140 ₽</p>
-                        </div>
-                        <div class="product-card__info-col">
-                          <button class="btn btn_theme_dark-green">Заказать</button>
-                        </div>
+                      <div class="product-card__info-col">
+                        <button class="btn btn_theme_dark-green" data-scroll-to="order">Заказать</button>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="slider__slide product-card">
-                  <div class="product-card__picture"><img src="./images/decor/granola-seaweed.png"
-                      alt="Батончик “Морские водоросли”"></div>
-                  <div class="product-card__content">
-                    <div class="product-card__ingredients">
-                      <div class="product-card__ingredients-inner">
-                        <svg class="product-card__ingredients-icon">
-                          <use xlink:href="./images/icons/sprite.svg#chocolate-bar"></use>
-                        </svg>
-                        <div class="product-card__ingredients-text">Состав</div>
+                </div>
+              </li>
+              <li class="slider__slide product-card">
+                <div class="product-card__picture"><img src="./images/decor/granola-seaweed.png"
+                    alt="Батончик “Морские водоросли”"></div>
+                <div class="product-card__content">
+                  <div class="product-card__ingredients">
+                    <div class="product-card__ingredients-inner">
+                      <svg class="product-card__ingredients-icon">
+                        <use xlink:href="./images/icons/sprite.svg#chocolate-bar"></use>
+                      </svg>
+                      <div class="product-card__ingredients-text">Состав</div>
+                    </div>
+                    <div class="product-card__ingredients-dropdown ingredients-dropdown">
+                      <table class="ingredients-dropdown__table">
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#oat"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Овёс</td>
+                          <td class="ingredients-dropdown__col">25 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#seaweed"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Мор. водоросли</td>
+                          <td class="ingredients-dropdown__col">15 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#almond"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Миндаль</td>
+                          <td class="ingredients-dropdown__col">20 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#powder"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Сухое молоко</td>
+                          <td class="ingredients-dropdown__col">10 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#seeds"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Тыкв. семечки</td>
+                          <td class="ingredients-dropdown__col">20 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#apitherapy"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Зам. сахара</td>
+                          <td class="ingredients-dropdown__col">4 г</td>
+                        </tr>
+                        <tr class="ingredients-dropdown__row">
+                          <td class="ingredients-dropdown__col">
+                            <svg class="ingredients-dropdown__icon">
+                              <use xlink:href="./images/icons/sprite.svg#beans"></use>
+                            </svg>
+                          </td>
+                          <td class="ingredients-dropdown__col">Какао бобы</td>
+                          <td class="ingredients-dropdown__col">4 г</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="product-card__title">Батончик “Морские водоросли”</div>
+                  <div class="product-card__desc">
+                    <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят:
+                      сухое молоко, заменитель сахара и какао бобы.</p>
+                  </div>
+                  <div class="product-card__info">
+                    <div class="product-card__info-row">
+                      <div class="product-card__info-col">
+                        <p>Калорийность</p>
+                        <p><b>120 ккал</b></p>
                       </div>
-                      <div class="product-card__ingredients-dropdown ingredients-dropdown">
-                        <table class="ingredients-dropdown__table">
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#oat"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Овёс</td>
-                            <td class="ingredients-dropdown__col">25 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#seaweed"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Мор. водоросли</td>
-                            <td class="ingredients-dropdown__col">15 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#almond"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Миндаль</td>
-                            <td class="ingredients-dropdown__col">20 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#powder"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Сухое молоко</td>
-                            <td class="ingredients-dropdown__col">10 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#seeds"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Тыкв. семечки</td>
-                            <td class="ingredients-dropdown__col">20 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#apitherapy"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Зам. сахара</td>
-                            <td class="ingredients-dropdown__col">4 г</td>
-                          </tr>
-                          <tr class="ingredients-dropdown__row">
-                            <td class="ingredients-dropdown__col">
-                              <svg class="ingredients-dropdown__icon">
-                                <use xlink:href="./images/icons/sprite.svg#beans"></use>
-                              </svg>
-                            </td>
-                            <td class="ingredients-dropdown__col">Какао бобы</td>
-                            <td class="ingredients-dropdown__col">4 г</td>
-                          </tr>
-                        </table>
+                      <div class="product-card__info-col">
+                        <p>Вес</p>
+                        <p><b>98 грамм</b></p>
                       </div>
                     </div>
-                    <div class="product-card__title">Батончик “Морские водоросли”</div>
-                    <div class="product-card__desc">
-                      <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят:
-                        сухое молоко, заменитель сахара и какао бобы.</p>
-                    </div>
-                    <div class="product-card__info">
-                      <div class="product-card__info-row">
-                        <div class="product-card__info-col">
-                          <p>Калорийность</p>
-                          <p><b>120 ккал</b></p>
-                        </div>
-                        <div class="product-card__info-col">
-                          <p>Вес</p>
-                          <p><b>98 грамм</b></p>
-                        </div>
+                    <div class="product-card__info-row">
+                      <div class="product-card__info-col product-card__info-col_font-size_big">
+                        <p>140 ₽</p>
                       </div>
-                      <div class="product-card__info-row">
-                        <div class="product-card__info-col product-card__info-col_font-size_big">
-                          <p>140 ₽</p>
-                        </div>
-                        <div class="product-card__info-col">
-                          <button class="btn btn_theme_dark-green">Заказать</button>
-                        </div>
+                      <div class="product-card__info-col">
+                        <button class="btn btn_theme_dark-green" data-scroll-to="order">Заказать</button>
                       </div>
                     </div>
                   </div>
-                </li>
-              </ul>
-              <div class="slider__navigation">
-                <button id="sliderBtnPrev" class="slider__btn slider__btn_prev">
-                  <svg class="slider__btn-img">
-                    <use xlink:href="./images/icons/sprite.svg#arrow"></use>
-                  </svg>
-                </button>
-                <button id="sliderBtnNext" class="slider__btn slider__btn_next">
-                  <svg class="slider__btn-img">
-                    <use xlink:href="./images/icons/sprite.svg#arrow"></use>
-                  </svg>
-                </button>
-              </div>
+                </div>
+              </li>
+            </ul>
+            <div class="slider__navigation">
+              <button id="sliderBtnPrev" class="slider__btn slider__btn_prev">
+                <svg class="slider__btn-img">
+                  <use xlink:href="./images/icons/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <button id="sliderBtnNext" class="slider__btn slider__btn_next">
+                <svg class="slider__btn-img">
+                  <use xlink:href="./images/icons/sprite.svg#arrow"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section" data-section-id="team" data-sidemenu-theme="black">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Команда</h2>
@@ -435,7 +433,7 @@
           </ul>
         </div>
       </section>
-      <section class="section accordeon">
+      <section class="section accordeon" data-section-id="menu" data-sidemenu-theme="black">
         <ul id="accordeonList" class="accordeon__list">
           <li class="accordeon__item" data-item>
             <a href="#" class="accordeon__trigger" data-trigger
@@ -496,7 +494,7 @@
           </li>
         </ul>
       </section>
-      <section class="section reviews-section">
+      <section class="section reviews-section" data-section-id="reviews" data-sidemenu-theme="black">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
@@ -573,7 +571,29 @@
           </div>
         </div>
       </section>
-      <section class="section section_font-color_green order-section">
+      <section class="section player-section" data-section-id="player" data-sidemenu-theme="black">
+        <div class="container">
+          <h2 class="section__title">Как мы работаем</h2>
+          <div class="player-section__container">
+            <div class="player">
+              <video src="video/bars.mp4" poster="images/decor/splash-screen.png" class="player__video"></video>
+              <div class="player__controls">
+                <button class="player__play" data-icon="play"></button>
+                <div class="player__playback">
+                  <div class="player__playback-button"></div>
+                </div>
+                <svg class="player__volume-icon">
+                  <use xlink:href="./images/icons/sprite.svg#volume"></use>
+                </svg>
+                <div class="player__volume">
+                  <div class="player__volume-button"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_font-color_green order-section" data-section-id="order" data-sidemenu-theme="white">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
@@ -652,7 +672,7 @@
           </form>
         </div>
       </section>
-      <section class="section map-section">
+      <section class="section map-section" data-section-id="contacts" data-sidemenu-theme="black">
         <div id="map" class="map"></div>
         <footer class="footer">
           <div class="container footer__container">
@@ -704,15 +724,15 @@
   </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item_active"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item active"><a href="" class="fixed-menu__link" data-scroll-to="hero"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="benefits"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="bars"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="team"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="menu"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="reviews"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="player"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="order"></a></li>
+      <li class="fixed-menu__item"><a href="" class="fixed-menu__link" data-scroll-to="contacts"></a></li>
     </ul>
   </nav>
   <div id="modal" class="modal">
@@ -725,7 +745,11 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/ops.js"></script>
   <script src="js/humburger-menu.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/horizontalAcco.js"></script>
@@ -733,6 +757,7 @@
   <script src="js/tabs.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/map.js"></script>
+  <script src="js/player.js"></script>
 </body>
 
 </html>

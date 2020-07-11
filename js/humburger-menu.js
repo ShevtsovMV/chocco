@@ -11,6 +11,15 @@ const humburgerFn = () => {
   closeHumburgerMenu.addEventListener('click', () => {
     humburgerMenu.classList.remove('open');
   });
+
+  const menuList = document.querySelector(".menu__list");
+  menuList.addEventListener('click', e => {
+    const target = e.target;
+
+    if (target.closest(".menu__item")) {
+      humburgerMenu.classList.remove('open');
+    }
+  });
 };
 
 humburgerFn();
