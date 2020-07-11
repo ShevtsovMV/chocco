@@ -1111,7 +1111,8 @@ img {
 
 .accordeon__item {
   height: 100%;
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
 
 .accordeon__trigger {
   display: flex;
@@ -1135,12 +1136,14 @@ img {
   width: 0;
   overflow: hidden;
   transition: 1s; }
+  @media screen and (max-width: 480px) {
+    .accordeon__wrap {
+      transition: none; } }
 
 .accordeon__content {
   display: flex;
   flex-direction: column;
   padding: 25px 30px 25px 28px;
-  overflow-y: auto;
   background-color: rgba(51, 53, 55, 0.93);
   color: #ffffff;
   font-size: 16px;

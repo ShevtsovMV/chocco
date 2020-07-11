@@ -27,6 +27,7 @@
 .accordeon__item{
   height: 100%;
   display: flex;
+  overflow: hidden;
 }
 
 .accordeon__trigger{
@@ -53,24 +54,21 @@
   width: 0;
   overflow: hidden;
   transition: 1s;
-}
 
-// .active .accordeon__wrap{
-//   width: 530px;
-// }
+  @include phones {
+    transition: none;
+  }
+}
 
 .accordeon__content{
   display: flex;
   flex-direction: column;
-  // min-width: 530px;
   padding: 25px 30px 25px 28px;
-  overflow-y: auto;
   background-color: rgba(51, 53, 55, .93);
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  // position: relative;
   height: 100%;
 }
 
@@ -79,9 +77,6 @@
   height: 20px;
   margin-bottom: 10px;
   align-self: flex-end;
-  // position: absolute;
-  // top: rem(24px);
-  // right: 2.8vw;
   cursor: pointer;
   fill: #fff;
   opacity: 0.6;
