@@ -1,0 +1,72 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+.team__item {
+  width: calc((100% - 3*20px)/4);
+  text-align: center;
+
+  @include tablets {
+    width: rem(265px);
+  }
+}
+
+.team__photo {
+  margin-bottom: rem(20px);
+
+  @include tablets {
+    margin: 0 auto rem(26px) auto;
+  }
+
+  @include phones {
+    width: 60%;
+  }
+}
+
+.team__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(21px);
+  color: #000;
+  font-weight: bold;
+  margin-bottom: rem(10px);
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    border-color: $darkGreen transparent transparent;
+    border-style: solid;
+    border-width: 6px 6px 0;
+  }
+}
+
+.team__item.active .team__name::after {
+  border-color: transparent transparent $darkGreen;
+  border-width: 0 6px 6px;
+}
+
+.team__details {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.team__post {
+  color: #000;
+}
+
+.team__desc {
+  font-weight: 300;
+  padding-bottom: rem(26px);
+}

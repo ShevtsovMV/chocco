@@ -1,0 +1,27 @@
+.order-section {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../images/decor/berries-pattern.png");
+    position: absolute;
+    z-index: $z-background;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../images/decor/berry-order.png") bottom 10% left 1% no-repeat, url("../images/decor/leaf-order.png") bottom 10% right rem(3px) no-repeat;
+    position: absolute;
+    z-index: $z-decor;
+  }
+
+  @include tablets {
+    &::after {
+      display: none;
+    }
+  }
+}

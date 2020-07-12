@@ -1,0 +1,39 @@
+.section {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_font-color_green {
+    color: $darkGreen;
+
+    .section__title {
+    color: inherit;
+    }
+  }
+
+  &_bg_light-gray::before {
+    content: "";
+      width: 100%;
+      height: 100%;
+      background-color: $lightGray;
+      position: absolute;
+      z-index: $z-background;
+  }
+}
+
+.section__title {
+  font-size: rem(48px);
+  font-weight: bold;
+  margin-bottom: rem(45px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+
+  @include phones {
+    font-size: rem(45px);
+    line-height: 1;
+    margin-bottom: 8.33vw;
+  }
+}

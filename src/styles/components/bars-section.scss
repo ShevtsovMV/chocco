@@ -1,0 +1,10 @@
+.bars-section{
+
+  &::after {
+    position: absolute;
+    bottom: -130px;
+    right: 0;
+    content: url("../images/decor/berries-and-leaf-bars-section.png");
+    z-index: $z-decor;
+  }
+}

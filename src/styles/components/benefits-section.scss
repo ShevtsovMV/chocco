@@ -1,0 +1,24 @@
+.benefits-section {
+  position: relative;
+  background: url("../images/decor/side-leaf.png") left top 57% no-repeat;
+
+  @include tablets {
+    background-position: left top 12%;
+  }
+
+  @include phones {
+    background: none;
+  }
+
+  &::before {
+    content: url("../images/decor/bars-and-berries.png");
+    position: absolute;
+    bottom: rem(-114px);
+    left: 0;
+    z-index: $z-decor;
+
+    @include phones {
+      display: none;
+    }
+  }
+}

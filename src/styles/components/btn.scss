@@ -1,0 +1,51 @@
+.btn {
+  display: inline-block;
+  font-size: rem(19px);
+  font-weight: bold;
+  padding: rem(19px) rem(35px);
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+  &_theme_white {
+    background: #fff;
+    color: $darkGreen;
+
+    &:hover {
+      background: $darkGreen;
+      color: #fff;
+    }
+  }
+
+  &_theme_green {
+    background: $darkGreen;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: $darkGreen;
+    }
+  }
+
+  &_theme_dark-green {
+    background: $darkGreen;
+    color: #fff;
+
+    &:hover {
+      background: #2e4e3f;
+    }
+  }
+
+  &_theme_transparent {
+    background: transparent;
+    color: $darkGreen;
+    text-transform: none;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}

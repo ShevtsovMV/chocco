@@ -1,0 +1,22 @@
+.modal {
+  display: none;
+  padding: 0;
+
+  &.error-modal {
+    .modal__content {
+      color: red;
+    }
+  }
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem(36px) rem(64px);
+  background-color: #fff;
+}
+
+.modal__content {
+  margin-bottom: rem(22px);
+}
