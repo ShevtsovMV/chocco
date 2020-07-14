@@ -59,11 +59,11 @@ const horizontalAcco = (selector) => {
         const currentContent = current.querySelector("[data-wrap]");
         const currentText = current.querySelector("[data-text]");
 
-        currentText.style.width = calculateWidth().text + "px";
-
         if (body.offsetWidth > 480) {
+          currentText.style.width = calculateWidth().text + "px";
           currentContent.style.width = calculateWidth().container + "px";
         } else {
+          currentText.style.width = "100%";
           items.forEach(function (item) {
             if (item !== current) {
               item.style.width = 0;

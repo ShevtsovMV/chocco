@@ -14,7 +14,7 @@ const gulpif = require('gulp-if');
 
 const env = process.env.NODE_ENV;
 
-const { SRC_PATH, DIST_PATH, STYLES_LIBS } = require('./gulp.config');
+const { SRC_PATH, DIST_PATH, STYLES_LIBS } = require('./gulp.config.json');
 
 sass.compiler = require('node-sass');
 
